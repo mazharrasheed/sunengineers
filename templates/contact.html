@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+
+
+<div class="clearfix">
+
+  <h1 style=" position: relative ;margin-left:7% ;margin-top: 20px; ">Get in Tuch With Us </h1>
+  <h1 style=" position: relative ;margin-left:7%; margin-top: -30px ; color: gold; ">_________________</h1>
+
+  <div class='box'>
+
+    <h1 style="background-color:gold ; text-align: center; font-size: 30px; margin-top: 0px;">Visit our Office</h1>
+
+    <p style="padding-left:15px ;"> <strong>Address:</strong> 17KM Gujranwla G.T Road, adjacent Chianwali Grid Station,
+      <br> Chianwali,<br>
+      <br>
+
+      <strong> City:</strong> Gujranwala <br>
+      <br>
+      <strong>Pakistan</strong>
+    </p>
+
+  </div>
+
+  <div class='box'>
+
+    <h1 style="background-color:gold ; text-align: center; font-size: 30px; margin-top: 0px;">24/7 Quick Contact</h1>
+
+    <p style="padding-left:15px ;">
+      <strong>Phone:</strong> 300-xxxxxxx<br>
+      <br>
+      <strong>e-mail:</strong> xxxxxx@gmail.com<br>
+
+
+  </div>
+
+  <div class='box'>
+
+    <h1 style="background-color:gold ; text-align: center; font-size: 30px; margin-top: 0px">Working Hours</h1>
+
+    <p style="padding-left:15px ;">
+      <strong>Sat - Thu:</strong> 8:30am to 17:30pm <br>
+      <br>
+      <strong>Friday:</strong> We are Closed<br>
+
+  </div>
+
+</div>
+
+<div>
+
+  <h1 style=" position: relative ; text-align: center; width: 1300px;margin-top: 50px; ">Leave Your Massage</h1>
+  <h1 style=" position: relative ; margin-top: -30px ;text-align: center; width: 1300px; color: gold; ">________</h1>
+
+  <h2 style=" position: relative ; margin-top: 20px ;text-align: center; width: 1300px; font-size: 15px;">If you have
+    any questions about the services we provide simply use the form below.<br> We try and respond to all queries and
+    comments within 24 hours.</h2>
+
+</div>
+
+
+<div class="container">
+
+
+
+  <form method="post" action="/contact">
+    {% csrf_token %}
+
+    {{form}}
+
+    <div class="row" style="width:10% ; position:relative ; margin-left:80% " ;>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+
+{% endblock body %}
